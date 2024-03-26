@@ -8,10 +8,8 @@ classDiagram
     Usuario : +Telefone
     Usuario : +Tipo
     Usuario : +Empresa
-    Usuario : +Ofertas
-    Usuario : +Demandas
-    Usuario "1" -- "*" Oferta : tem
-    Usuario "1" -- "*" Demanda : tem
+    Usuario : +List~Oferta~ Ofertas
+    Usuario : +List~Demanda~ Demandas
     Oferta : +Commoditie
     Oferta : +Preço
     Oferta : +Descrição
