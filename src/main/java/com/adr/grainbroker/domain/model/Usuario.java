@@ -20,17 +20,7 @@ public class Usuario {
     private List<Oferta> ofertas;
     @OneToMany(cascade = CascadeType.ALL )
     private List<Demanda> demandas;
-
-    public Usuario(String nome, int cpf, Contato contato, TipoUsuario tipoUsuario) {
-        this.nome = nome;
-        this.cpf = cpf;
-        this.contato = contato;
-        this.tipoUsuario = tipoUsuario;
-        this.ofertas = new ArrayList<Oferta>();
-        this.demandas = new ArrayList<Demanda>();
-    }
-
-    public Usuario() {
+    public Usuario(){
 
     }
 
