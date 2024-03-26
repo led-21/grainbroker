@@ -6,7 +6,7 @@ classDiagram
     Usuario : -int cpf
     Usuario : -Contato contato
     Usuario : -TipoUsuario tipoUsuario
-    Usuario : -List~Ofertas~ oferta
+    Usuario : -List~Ofertas~ ofertas
     Usuario : -List~Demanda~ demandas
     Usuario *-- Oferta
     Usuario *-- Demanda
