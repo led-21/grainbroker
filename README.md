@@ -5,13 +5,13 @@ classDiagram
     Usuario : -String nome
     Usuario : -int cpf
     Usuario : -Contato contato
-    Usuario : -String tipo
-    Usuario : -String empresa
+    Usuario : -TipoUsuario tipoUsuario
     Usuario : -List~Ofertas~ oferta
     Usuario : -List~Demanda~ demandas
     Usuario *-- Oferta
     Usuario *-- Demanda
     Usuario *-- Contato
+    Usuario *-- TipoUsuario
     Oferta : -String commoditie
     Oferta : -int preço
     Oferta : -String descrição
@@ -22,4 +22,7 @@ classDiagram
     Demanda : -String local
     Contato : -String email
     Contato : -int telefone
+    TipoUsuario : -String tipoUsuario
+    TipoUsuario : -String empresa
+    
 ```
