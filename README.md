@@ -1,3 +1,6 @@
+# Grain Broker
+
+Java RESTful API criada como atividade do curso Java AI Powered.
 
 ## Diagrama de Classes
 ```mermaid
