@@ -13,11 +13,11 @@ classDiagram
     Usuario *-- Contato
     Usuario *-- TipoUsuario
     Oferta : -String commoditie
-    Oferta : -int preço
+    Oferta : -int preco
     Oferta : -String descrição
     Oferta : -String local
     Demanda : -String commoditie
-    Demanda : -int preço
+    Demanda : -int preco
     Demanda : -String descrição
     Demanda : -String local
     Contato : -String email
