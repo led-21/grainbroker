@@ -2,22 +2,24 @@
 ## Diagrama de Classes
 ```mermaid
 classDiagram
-    Usuario : -Nome
-    Usuario : -CPF
-    Usuario : -Email
-    Usuario : -Telefone
+    Usuario : -String nome
+    Usuario : -int cpf
+    Usuario : -Contato contato
     Usuario : -Tipo
     Usuario : -Empresa
     Usuario : -List~Ofertas~ Oferta
     Usuario : -List~Demanda~ Demandas
     Usuario *-- Oferta
     Usuario *-- Demanda
-    Oferta : -Commoditie
-    Oferta : -Preço
-    Oferta : -Descrição
-    Oferta : -Local
-    Demanda : -Commoditie
-    Demanda : -Preço
-    Demanda : -Descrição
-    Demanda : -Local
+    Usuario *-- Contato
+    Oferta : -String Commoditie
+    Oferta : -int Preço
+    Oferta : -String Descrição
+    Oferta : -String Local
+    Demanda : -String Commoditie
+    Demanda : -int Preço
+    Demanda : -String Descrição
+    Demanda : -String Local
+    Contato : -String Email
+    Contato : -int telefone
 ```
