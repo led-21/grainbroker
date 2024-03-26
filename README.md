@@ -9,9 +9,9 @@ classDiagram
     Usuario : -String empresa
     Usuario : -List~Ofertas~ oferta
     Usuario : -List~Demanda~ demandas
-    Usuario *-- oferta
-    Usuario *-- demanda
-    Usuario *-- contato
+    Usuario *-- Oferta
+    Usuario *-- Demanda
+    Usuario *-- Contato
     Oferta : -String commoditie
     Oferta : -int preço
     Oferta : -String descrição
