@@ -1,12 +1,11 @@
-package com.adr.grainbroker.model;
+package com.adr.grainbroker.domain.model;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 @Entity
 public class Contato {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     long userId;
     private String email;
     private  int telefone;

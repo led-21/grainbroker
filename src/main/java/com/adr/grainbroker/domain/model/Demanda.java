@@ -1,11 +1,14 @@
-package com.adr.grainbroker.model;
+package com.adr.grainbroker.domain.model;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity
 public class Demanda {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     long userId;
     private String commodities;
     private int preco;
