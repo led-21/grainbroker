@@ -1,6 +1,11 @@
 package com.adr.grainbroker.model;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity
 public class Demanda {
+    @Id
     long userId;
     private String commodities;
     private int preco;

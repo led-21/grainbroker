@@ -1,6 +1,11 @@
 package com.adr.grainbroker.model;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity
 public class TipoUsuario {
+    @Id
     long userId;
     private String tipoUsuario;
     private String empresa;
